@@ -1,76 +1,16 @@
-# rlImGui-cs (raylib cs 6.0 compatible version, WIP)
-<img align="left" src="https://github.com/raysan5/raylib/raw/master/logo/raylib_logo_animation.gif" width="64">
-A Raylib-cs integration with DearImGui
+Gameboy/Color emulator in C#. Using Raylib-cs and ImGui.Net
 
-rlImgui-cs provides a backend for [Dear ImGui](https://github.com/ocornut/imgui) using [Raylib](https://www.raylib.com/) for C# using https://github.com/mellinoe/ImGui.NET
+![006](https://github.com/nolberto82/GBoy/assets/16211263/2a262a5d-f014-4189-bc00-99b36bc0b72c)
 
-# Building
-rlImGui-cs is is a shared library that uses raylib-cs and ImGui.Net
+![005](https://github.com/nolberto82/GBoy/assets/16211263/6225d304-8b6d-4891-be0b-1a156b25b0ec)
 
-# Dependencies
-This library is dependent on two other packages.
+![002](https://github.com/nolberto82/GBoy/assets/16211263/9713197d-0f0b-407a-ab83-5215a652a7ca)
 
-Raylib-cs (v 6.0.0)
-ImGui.NET (v 1.90.1.1)
-
-# Setup
-
-Using rlImGui in your code is very easy. Once you have included the library, or source files for rlImGui and ImGui in your project, simply do the following.
-```
-using Raylib_cs;
-using rlImGui_cs;
-using ImGuiNET;
+![003](https://github.com/nolberto82/GBoy/assets/16211263/3ffee807-c20c-47c8-9306-4f73590a832c)
 
 
-// before your game loop
-rlImGui.Setup(true);	// sets up ImGui with ether a dark or light default theme
+# Resources
 
-// inside your game loop, between BeginDrawing() and EndDrawing()
-rlImGui.Begin();			// starts the ImGui content mode. Make all ImGui calls after this
+https://gbdev.io/pandocs/
 
-rlImGui.End();			// ends the ImGui content mode. Make all ImGui calls before this
-
-// after your game loop is over, before you close the window
-
-rlImGui.Shutdown();		// cleans up ImGui
-```
-
-# Examples
-There are two example programs in the examples folder.
-
-## Simple
-This is the most simple use of ImGui in raylib, it just shows the ImGui demo window.
-![image](https://user-images.githubusercontent.com/322174/136596910-da1b60ae-4a39-48f0-ae84-f568bc396870.png)
-
-
-## Editor
-This is a more complex example of ImGui, showing how to use raylib 2d and 3d cameras to draw into ImGui windows using render textures.
-![image](https://user-images.githubusercontent.com/322174/136596949-033ffe0a-2476-4030-988a-5bf5b6e2ade7.png)
-
-
-# Images
-Raylib textures can be drawn in ImGui using the following functions
-```
-rlImGui.Image(Texture2D image);
-rlImGui.ImageSize(Texture2D image, int width, int height);
-rlImGui.ImageRect(Texture2D image, int destWidth, int destHeight, Rectangle sourceRect);
-rlImGui.ImageRenderTexture(RenderTexture2D image);
-```
-## Image Buttons
-```
-rlImGui.ImageButton(System.String name, Texture2D image);
-rlImGui.ImageButtonSize(System.String name, Texture2D image, Vector2 size);
-```
-
-# Changelist
-
-## v1.0.2.0
-* Comment public API
-* Optional Delta Time argument for new frame
-* Image Buttons
-* Render Texture drawing functiona
-
-## v1.0.0.1
-* Inital nuget package.
-* Update to current ImGui
-* Include FontAwesome
+https://github.com/NightShade256/NightShade256.github.io/blob/main/_posts/2021-03-27-gb-sound-emulation.md
