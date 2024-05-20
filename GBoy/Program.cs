@@ -36,7 +36,7 @@ public class Program
 
     public const int ScreenWidth = 1280;
     public const int ScreenHeight = 800;
-    private readonly string WindowTitle = "Gameboy RG";
+    private readonly string WindowTitle = "GBoy";
     private const string FontName = "Fonts/consola.ttf";
 
     static void Main() => new Program().Init();
